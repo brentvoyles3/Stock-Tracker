@@ -29,7 +29,6 @@ public class PropertiesExample {
     public static void main(String[] args) {
 
         String configPath = "resources/config.properties";
-
         // the following try-statement is called a try-with-resources statement
         // see https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html
         try (FileInputStream configFileStream = new FileInputStream(configPath)) {
