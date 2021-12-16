@@ -373,7 +373,7 @@ public class StockLoader extends VBox {
             } // while
         } catch (UnsupportedOperationException uoe) {
             System.err.print(uoe);
-            uoe.printStackTrace;
+            uoe.printStackTrace();
         } catch (MalformedURLException mue) {
             System.err.print(mue);
             mue.printStackTrace();
