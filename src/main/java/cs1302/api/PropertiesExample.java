@@ -37,6 +37,7 @@ public class PropertiesExample {
             config.list(System.out);                                  // list all using standard out
             String year = config.getProperty("project.year");         // get project.year
             String semester = config.getProperty("project.semester"); // get project.semester
+            String apikey = config.getProperty("stockdata.apikey");
             System.out.printf("year = %s\n", year);
             System.out.printf("semester = %s\n", semester);
         } catch (IOException ioe) {

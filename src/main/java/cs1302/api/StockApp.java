@@ -10,23 +10,18 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 
 /**
- * Represents an event-finding application!
- *
- *
+ * Represents a stock-tracking application.
+ * @author Brent Voyles
  */
 public class StockApp extends Application {
 
+    /**
+     * The main method that sets the scene for a {@code StockApp}.
+     * @param stage The main stage for the javafx application.
+     */
     public void start(Stage stage) {
         StockLoader stockloader = new StockLoader();
-        StackPane loaderPane = new StackPane(stockloader);
-        loaderPane.setPrefHeight(175);
-        StockNews news = new StockNews();
-        StackPane newsPane = new StackPane(news);
-        BorderPane root = new BorderPane();
-        root.setTop(loaderPane);
-        root.setBottom(newsPane);
-        Scene scene = new Scene(root);
-        scene.setFill(Color.GREEN);
+        Scene scene = new Scene(stockloader);
         stage.setMaxWidth(1280);
         stage.setMaxHeight(720);
         stage.setTitle("Real-Time Stock Tracker");
